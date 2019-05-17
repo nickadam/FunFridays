@@ -20,6 +20,8 @@ This sample config file does a great job of communicating what haproxy can do. T
 
 ## 2. Modify sample config file for our purposes
 
+https://github.com/nickadam/FunFridays/tree/177fd6c6d0aee0ebb2ea4be484873b387d157f3b
+
 To clean this up a bit so there is only one load balanced backend we can remove everthing that isn't associated with default_backend.
 
 Now we have a listener on 5000 and for backend server that roundrobin between localhost ports 5001-5004, not very useful since there isn't anything running there. Change these to something useful, or just pick some random internet sites to load balance.
