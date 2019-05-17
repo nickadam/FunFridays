@@ -1,5 +1,9 @@
 # HAProxy on docker
 
+## 1. Get a sample config file from alpine
+
+https://github.com/nickadam/FunFridays/tree/1243e333787d04cd0dd9cea3000161fe47a7c101
+
 The docker team maintains an haproxy official image. Documentation for the image is available here.
 
 https://docs.docker.com/samples/library/haproxy/
