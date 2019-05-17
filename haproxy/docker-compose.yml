@@ -7,3 +7,7 @@ services:
       - target: 5000
         published: 8080
         protocol: tcp
+    deploy:
+      mode: global
+      placement:
+        constraints: [node.labels.my-haproxy == true]

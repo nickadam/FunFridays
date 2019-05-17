@@ -160,3 +160,19 @@ And we can stop it with docker-compose too
 ```
 docker-compose down
 ```
+
+## 5. Prepare docker-compose to run in a swarm
+
+To move our config to production we can add a few tidbits to it that are specific to our swarm. If you don't have a uniform cluster or your fastidious about where processes are running you can contrain your service to specific cluster nodes using labels.
+
+If you don't have a swarm, you can easily make a single node swarm with just one command.
+```
+docker swarm init
+```
+
+Add a label to your node and modify the docker-compose file to only run on the nodes with the label. https://docs.docker.com/engine/swarm/manage-nodes/#add-or-remove-label-metadata 
+
+```
+docker node ls # get the node hostname
+docker node update --label-add my-haproxy=true {node hostname}
+```
