@@ -28,6 +28,8 @@ Now we have a listener on 5000 and for backend server that roundrobin between lo
 
 ## 3. Run the config file in the official haproxy image
 
+https://github.com/nickadam/FunFridays/tree/5704613c5976f7493006738bbd5c34a7f1c79374/haproxy
+
 We can follow the steps at https://docs.docker.com/samples/library/haproxy/ to create our Dockerfile
 
 ```
