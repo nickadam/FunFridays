@@ -131,3 +131,13 @@ $ curl 127.0.0.1:8080
 ```
 
 Looks like it's working, each request is being round robin to the backend servers.
+
+## 3. Push image to docker hub, or the registry of your choice
+
+```
+docker tag my-haproxy nickadam/funfridayhaproxy
+docker push nickadam/funfridayhaproxy
+```
+
+Now our image is available from anywhere on the internet.
+
