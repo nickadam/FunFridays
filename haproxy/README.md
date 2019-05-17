@@ -178,3 +178,20 @@ Add a label to your node and modify the docker-compose file to only run on the n
 docker node ls # get the node hostname
 docker node update --label-add my-haproxy=true {node hostname}
 ```
+
+## 6. Deploy to docker swarm
+
+We can deploy our "stack" of services to docker swarm by referencing our docker-compose file
+```
+docker stack deploy -c docker-compose.yml haproxy
+```
+
+We can see the service is running 
+
+```
+$ docker service ls
+ID             NAME                MODE    REPLICAS  IMAGE                             PORTS
+6l5rky29cdxl   haproxy_my-haproxy  global  1/1       nickadam/funfridayhaproxy:latest  *:8080->5000/tcp
+```
+
+Since the image is accessible from the registry all that's needed for production is the compose file. The production servers will pull down the appropriate image and run it in the cluster.
