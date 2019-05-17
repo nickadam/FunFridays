@@ -143,6 +143,8 @@ Now our image is available from anywhere on the internet.
 
 ## 4. Make a service with docker-compose
 
+https://github.com/nickadam/FunFridays/tree/5cfd99126e9e7c3ddf90a40825c3ca6e378a7282/haproxy
+
 Rather than define all our command arguments to run this service in the command line, let's put them in a docker-compose.yml file.
 
 The reference for docker-compose is available here, https://docs.docker.com/compose/compose-file/
