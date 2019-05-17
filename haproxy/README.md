@@ -91,7 +91,7 @@ $ docker run --name my-running-haproxy my-haproxy
 <7>haproxy-systemd-wrapper: executing /usr/local/sbin/haproxy -p /run/haproxy.pid -db -f /usr/local/etc/haproxy/haproxy.cfg -Ds
 ```
 
-Now lets it a few times and see what we get
+Now lets curl it a few times and see what we get
 
 ```
 $ curl 127.0.0.1:8080
