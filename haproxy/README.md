@@ -163,6 +163,8 @@ docker-compose down
 
 ## 5. Prepare docker-compose to run in a swarm
 
+https://github.com/nickadam/FunFridays/tree/6b1cd723b73b47471f4060c64973a6b1d42355e9/haproxy
+
 To move our config to production we can add a few tidbits to it that are specific to our swarm. If you don't have a uniform cluster or your fastidious about where processes are running you can contrain your service to specific cluster nodes using labels.
 
 If you don't have a swarm, you can easily make a single node swarm with just one command.
