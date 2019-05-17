@@ -141,3 +141,20 @@ docker push nickadam/funfridayhaproxy
 
 Now our image is available from anywhere on the internet.
 
+## 4. Make a service with docker-compose
+
+Rather than define all our command arguments to run this service in the command line, let's put them in a docker-compose.yml file.
+
+The reference for docker-compose is available here, https://docs.docker.com/compose/compose-file/
+
+Now we can launch the service using docker-compose.
+
+```
+docker-compose up -d
+```
+
+And we can stop it with docker-compose too
+
+```
+docker-compose down
+```
